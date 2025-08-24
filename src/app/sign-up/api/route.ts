@@ -33,7 +33,13 @@ export async function POST(request: Request) {
       },
     });
 
-    const { hashedPassword: _, ...userWithoutPassword } = user;
+    const userWithoutPassword = {
+      id: user.id,
+      email: user.email,
+      name: user.name,
+      createdAt: user.createdAt,
+      updatedAt: user.updatedAt,
+    };
 
     return NextResponse.json(userWithoutPassword);
   } catch (error) {
