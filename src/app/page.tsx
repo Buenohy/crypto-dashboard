@@ -20,24 +20,28 @@ export default function Home() {
                 subtitle="BTC"
                 value="52,291"
                 percentage={0.25}
+                image="placeholder"
               />
               <Card
                 title="Litecoin"
                 subtitle="LTC"
                 value="8,291"
                 percentage={0.25}
+                image="placeholder"
               />
               <Card
                 title="Ethereum"
                 subtitle="ETH"
                 value="28,291"
                 percentage={0.25}
+                image="placeholder"
               />
               <Card
                 title="Solana"
                 subtitle="SOL"
                 value="14,291"
                 percentage={0.25}
+                image="placeholder"
               />
             </div>
             <div className="flex flex-col gap-6 lg:flex-row md:gap-8">
