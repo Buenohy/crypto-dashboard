@@ -8,9 +8,9 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ResponsiveContainer,
-  ReferenceLine, // Para as linhas verticais pontilhadas (se necessário)
+  // Legend, - Removido pois não está sendo usado
+  // ReferenceLine, - Removido pois não está sendo usado
 } from 'recharts';
 
 interface CryptoData {
@@ -27,21 +27,8 @@ const data: CryptoData[] = [
   // ... mais dados
 ];
 
-const CustomFontSize = (props: any) => {
-  const { x, y, payload } = props;
-  return (
-    <text
-      x={x}
-      y={y}
-      dy={16}
-      textAnchor="middle"
-      fill="#9CA3AF"
-      className="text-xs 2xl:text-3xl"
-    >
-      {payload.value}
-    </text>
-  );
-};
+// Removido CustomFontSize pois não estava sendo usado
+// Se precisar dele mais tarde, descomente e use no componente
 
 const CryptoChart = () => {
   return (
@@ -122,6 +109,7 @@ const CryptoChart = () => {
             // Mas se são apenas barras de volume normal, o acima funciona.
           />
           {/* Exemplo de ReferenceLine para linhas pontilhadas como na imagem original (timeline) */}
+          {/* Se precisar usar ReferenceLine, descomente e importe-o novamente */}
           {/* <ReferenceLine x="19:30" stroke="rgba(255,255,255,0.3)" strokeDasharray="3 3" /> */}
         </ComposedChart>
       </ResponsiveContainer>
