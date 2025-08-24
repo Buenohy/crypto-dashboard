@@ -43,7 +43,7 @@ export default function Card({
   subtitle,
   value,
   percentage,
-  image,
+  image: _image,
 }: CardProps) {
   return (
     <div className="bg-white dark:bg-bg-blue rounded-xl shadow-xl px-4 py-6 w-full h-[178px] 2xl:h-[278px] ">
