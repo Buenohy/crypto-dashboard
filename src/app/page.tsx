@@ -1,5 +1,4 @@
 import Card from '@/components/Card/Card';
-import Chart from '@/components/Chart/Chart';
 import Header from '@/components/Header/Header';
 import LiveMarket from '@/components/LiveMarket/LiveMarket';
 import PortfolioCard from '@/components/PortfolioCard/PortfolioCard';
@@ -54,7 +53,6 @@ export default function Home() {
                 <PortfolioCard />
               </div>
               <div className="flex w-full flex-col gap-6 lg:w-7/12 xl:w-8/12 md:gap-8">
-                {/* <Chart /> */}
                 <CryptoChartShadCnUi />
                 <LiveMarket
                   cryptoName="Bitcoin"
